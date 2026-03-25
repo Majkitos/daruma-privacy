@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Daruma</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f4ef;
+      --ink: #1c1a17;
+      --ink-muted: #6b6760;
+      --ink-faint: #b0ada8;
+      --accent: #c05c2a;
+      --border: #e2ddd7;
+      --max: 640px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      margin-bottom: 1.25rem;
+    }
+
+    .app-name {
+      font-family: 'Lora', serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 500;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: var(--ink-faint);
+      letter-spacing: 0.03em;
+    }
+
+    .intro {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--ink-muted);
+      font-style: italic;
+      margin-bottom: 3rem;
+      padding-left: 1.25rem;
+      border-left: 2px solid var(--border);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--ink-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #fff;
+      background: var(--accent);
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      border-bottom: none;
+      transition: opacity 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .contact-btn:hover {
+      opacity: 0.85;
+      border-color: transparent;
+    }
+
+    details {
+      margin-bottom: 1rem;
+    }
+
+    summary {
+      font-family: 'Lora', serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 0.5rem 0;
+    }
+
+    summary:hover {
+      color: var(--accent);
+    }
+
+    details p {
+      padding-left: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--ink-faint);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="daruma.png" alt="Daruma app icon" class="app-icon" />
+      <p class="app-name">Daruma</p>
+      <h1>Support</h1>
+      <p class="subtitle">Meditation & 10-session challenge</p>
+    </header>
+
+    <p class="intro">We're here to help. If you have a question, found a bug, or just want to say hello — reach out anytime.</p>
+
+    <section>
+      <h2>Contact us</h2>
+      <p>The fastest way to get help is to send us an email. We typically respond within 48 hours.</p>
+      <a href="mailto:daruma.meditation@gmail.com" class="contact-btn">daruma.meditation@gmail.com</a>
+    </section>
+
+    <hr class="divider" />
+
+    <section>
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>How do I reset my progress?</summary>
+        <p>You can reset your Daruma progress from the app's settings screen. This action cannot be undone.</p>
+      </details>
+
+      <details>
+        <summary>Does Daruma work offline?</summary>
+        <p>Yes. Daruma works entirely offline. All your data is stored locally on your device — no internet connection is required.</p>
+      </details>
+
+      <details>
+        <summary>How does Apple Health integration work?</summary>
+        <p>With your permission, Daruma writes mindfulness session data to Apple Health. You can enable or disable this in Settings → Privacy & Security → Health → Daruma.</p>
+      </details>
+
+      <details>
+        <summary>Is my data backed up?</summary>
+        <p>Your Daruma data is included in your device's iCloud or local backups. If you restore your device from a backup, your progress will be restored as well.</p>
+      </details>
+
+      <details>
+        <summary>I found a bug. How do I report it?</summary>
+        <p>Please email us at <a href="mailto:daruma.meditation@gmail.com">daruma.meditation@gmail.com</a> with a description of the issue, your device model, and iOS version. Screenshots are always helpful.</p>
+      </details>
+    </section>
+
+    <hr class="divider" />
+
+    <section>
+      <h2>Reporting a problem</h2>
+      <p>When contacting us about a bug or issue, including the following details helps us resolve it faster:</p>
+      <p>• Your device model (e.g. iPhone 15)<br />
+         • iOS version (Settings → General → About)<br />
+         • A brief description of the problem<br />
+         • Steps to reproduce the issue, if possible<br />
+         • Screenshots or screen recordings</p>
+    </section>
+
+    <hr class="divider" />
+
+    <section>
+      <h2>More</h2>
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>Daruma — Meditation & 10-session challenge</span>
+      <span>majkitos · <a href="https://github.com/majkitos" target="_blank">github.com/majkitos</a></span>
+    </footer>
+  </div>
+</body>
+</html>
